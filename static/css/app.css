@@ -1,0 +1,22 @@
+body {
+	padding-top: 50px;
+}
+
+.flat {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+}
+
+.flats_count {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.none {
+    display: none !important;
+}
+
+.jumbotron {
+    background-color: transparent;
+}

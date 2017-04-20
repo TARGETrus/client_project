@@ -16,6 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from client_project.views import mainview
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', mainview.IndexView.as_view(), name='index'),
+    url(r'^flats/$', mainview.DataPageView.as_view(), name='flats'),
 ]

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Data Page{% endblock %}
+
+{% block scripts %}
+    <script type="text/babel" src="{% static 'js/flats.js' %}"></script>
+    <script type="text/javascript">
+        var flats = {{data|safe}};
+    </script>
+{% endblock %}
+
+{% block pagecontent %}
+    <div class="jumbotron">
+        <h1>Список квартир</h1>
+        <p>Ниже приведен список квартир, доступных для продажи/найма.</p>
+    </div>
+    <div id="root"></div>
+{% endblock %}
