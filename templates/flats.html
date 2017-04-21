@@ -7,7 +7,7 @@
 {% block scripts %}
     <script type="text/babel" src="{% static 'js/flats.js' %}"></script>
     <script type="text/javascript">
-        var flats = {{data|safe}};
+        let flats = {{data|safe}};
     </script>
 {% endblock %}
 
@@ -16,5 +16,5 @@
         <h1>Список квартир</h1>
         <p>Ниже приведен список квартир, доступных для продажи/найма.</p>
     </div>
-    <div id="root"></div>
+    <div id="flats"></div>
 {% endblock %}

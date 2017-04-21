@@ -2,10 +2,15 @@ body {
 	padding-top: 50px;
 }
 
+.filter_form {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
 .flat {
     padding: 10px;
     margin-bottom: 30px;
-    border: 1px solid #eeeeee;
+    border: 1px solid #ddd;
 }
 
 .flats_count {
@@ -19,4 +24,8 @@ body {
 
 .jumbotron {
     background-color: transparent;
+}
+
+.btn {
+    margin-top: 10px;
 }

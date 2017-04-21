@@ -7,8 +7,7 @@ from django.views.generic import TemplateView
 
 class IndexView(TemplateView):
     def get(self, request, **kwargs):
-        context = {'data': {}}
-        return render(request, 'index.html', context)
+        return render(request, 'index.html')
 
 
 class DataPageView(TemplateView):
