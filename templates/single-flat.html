@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Flat Page{% endblock %}
+
+{% block scripts %}
+    <script type="text/babel" src="{% static 'js/single-flat.js' %}"></script>
+    <script type="text/javascript">
+        let single_flat = {{data|safe}};
+    </script>
+{% endblock %}
+
+{% block pagecontent %}
+    <div class="jumbotron">
+        <h1>Подробная информация о квартире</h1>
+        <p>Ниже приведена детальная информация о квартире, доступной для продажи/найма.</p>
+    </div>
+    <div id="single_flat"></div>
+{% endblock %}

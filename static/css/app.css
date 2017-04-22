@@ -2,12 +2,12 @@ body {
 	padding-top: 50px;
 }
 
-.filter_form {
+.right_tile {
     padding: 10px;
     border: 1px solid #ddd;
 }
 
-.flat {
+.tile_entity {
     padding: 10px;
     margin-bottom: 30px;
     border: 1px solid #ddd;
