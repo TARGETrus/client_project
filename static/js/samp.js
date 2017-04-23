@@ -11,6 +11,23 @@ let Flat = React.createClass({
         this.setState({visible: true});
     },
 
+    /* Sample code for remote js calls.
+    componentDidMount: function() {
+        let owner_id = this.props.data.id;
+        let owner_type = this.props.data.object_type == 'P' ? 'physical-entities' : 'legal-entities';
+
+        let client = new coreapi.Client();
+
+        client.get('http://localhost:8000/simulator/' + owner_type + '/' + owner_id)
+            .then(function(result) {
+                this.setState({data: result});
+            }.bind(this))
+            .catch(function (error) {
+                console.log("ERROR: ", error);
+            });
+    },
+    */
+
     render: function() {
         let author = this.props.data.url;
         let text = this.props.data.description;

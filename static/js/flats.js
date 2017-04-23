@@ -38,7 +38,7 @@ let FilterForm = React.createClass({
     render: function() {
 
         return (
-            <div className="row right_tile">
+            <div className="row right_tile center">
                 <form>
                     <div className="checkbox">
                         <label><input type="checkbox" name="flat_type"> Студия</input></label>

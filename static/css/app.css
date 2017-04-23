@@ -18,6 +18,11 @@ body {
     padding-bottom: 50px;
 }
 
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
 .none {
     display: none !important;
 }
